@@ -3,3 +3,24 @@ img{
     width: 250px;
 }
 
+body{
+    background-image: url("/resources/images/wood-background.jpg");
+    
+}
+
+h1{
+    color:aliceblue;
+    font-size: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+navbar{
+    background-color: #e3f2fd;
+}
+
