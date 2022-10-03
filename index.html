@@ -17,38 +17,63 @@
 
   <!-- Nota: el JS local no funciona con el navbar  -->
 
-  <title>Beerpedia</title>
+  <title>Beer Portal</title>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#intro">What is beer?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#classics">Classic beers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#variants">Variants</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-  
-  <div class="container-fluid" id="body">
-    <h1 class="text-center">Bienvenidos!</h1>
+  </nav>
 
+  <div class="container-fluid" id="body">
+    <h1>Welcome</h1>
+
+    <div class="card text-bg-secondary bg-gradient">
+      <a name="intro"></a>
+      <div class="card-body">
+        <h5 class="card-title">What is beer?</h5>
+
+        <p class="card-text">
+          Beer is the world's most widely consumed and probably the oldest alcoholic beverage. Beer is made with four
+          main ingredients – water, grains, hops, and yeast – and is categorized into two primary types: ales and
+          lagers.
+        </p>
+        <p class="card-text">
+          It is the third-most popular drink overall, after water and tea. The production of beer is called brewing,
+          which involves the fermentation of starches that are mainly derived from cereal grains, most commonly malted
+          barley, although wheat, maize (corn), and rice are widely used. Most beer is flavored with hops, which add
+          bitterness and act as a natural preservative, though other flavorings, such as herbs or fruit, may
+          occasionally be included. The fermentation process causes a natural carbonation effect, although this is often
+          removed during processing and replaced with forced carbonation.
+        </p>
+        <p class="card-text">
+          Some of humanity's earliest known writings refer to the production and distribution of beer: The Code of
+          Hammurabi included laws regulating beer and beer parlors, and "The Hymn to Ninkasi", a prayer to the
+          Mesopotamian goddess of beer, served as both a prayer and as a method of remembering the recipe for beer in a
+          culture with few literate people.
+        </p>
+        <a href="https://beer.fandom.com/wiki/Beer" target="_blank" class="card-link">Read more about beer history</a>
+      </div>
+    </div>
     <!-- Beer div start -->
     <div class="container text-center">
 
@@ -56,128 +81,154 @@
 
       <div class="row mt-2">
 
-        <div class="col-6 col-md-4">
+        <a name="classics"></a>
+        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 py-3">
           <div class="card text-bg-secondary bg-gradient" style="width: 18rem;">
             <img src="./resources/images/lager.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Pale Lager</h5>
               <hr>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-                <a class="btn btn-warning" href="#" role="button">Read more</a>
+              <p class="card-text">Pale lagers tend to be dry, lean, clean-tasting and crisp. Flavors may be subtle,
+                with no traditional beer ingredient dominating the others. Hop character (bitterness, flavor, and aroma)
+                ranges from negligible to a dry bitterness from noble hops.</p>
+              <a class="btn btn-warning" href="https://en.wikipedia.org/wiki/Pale_lager" target="_blank"
+                role="button">Read more</a>
             </div>
           </div>
         </div>
 
-        <div class="col-6 col-md-4">
+        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 py-3">
           <div class="card text-bg-secondary bg-gradient" style="width: 18rem;">
             <img src="./resources/images/red.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Amber Lager</h5>
               <hr>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-                <a class="btn btn-warning" href="#" role="button">Read more</a>
+              <p class="card-text">A widely available, sessionable craft beer style that showcases both malt and hops.
+                Amber lagers are a medium-bodied lager with a toasty or caramel-like malt character. Hop bitterness can
+                range from very low to medium-high.</p>
+              <a class="btn btn-warning"
+                href="https://www.craftbeer.com/styles/american-amber-lager#:~:text=A%20widely%20available%2C%20sessionable%20craft,hopping%20to%20achieve%20advanced%20flavors."
+                role="button">Read more</a>
             </div>
           </div>
         </div>
 
-        <div class="col-6 col-md-4">
+        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 py-3">
           <div class="card text-bg-secondary bg-gradient" style="width: 18rem;">
             <img src="./resources/images/black.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Dark Lager</h5>
               <hr>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-                <a class="btn btn-warning" href="#" role="button">Read more</a>
+              <p class="card-text"> In general, dark beers are known as the richer, more filling beer option in
+                comparison to light beers, which are known for being more thirst-quenching.
+
+                The dark colour comes from the beer’s brewing process and for those concerned, put your mind at ease as
+                it’s definitely 100% natural – with no additives required to achieve the varying shades. The roasted
+                malts perfectly combine the amino acids, sugars, and other grains together to achieve a rich, dark
+                colour.</p>
+              <a class="btn btn-warning" href="https://trulyexperiences.com/blog/dark-beer/" target="_blank"
+                role="button">Read more</a>
             </div>
           </div>
         </div>
 
       </div>
 
-      <!-- Columns are always 50% wide, on mobile and desktop -->
+      <!-- variants div start -->
+      <a name="variants"></a>
       <div class="row mt-2">
-        <div class="col-3 py-3">
+        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 py-3">
           <div class="card text-bg-secondary bg-gradient" style="width: 18rem;">
             <img src="./resources/images/ipa.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">India Pale Ale</h5>
               <hr>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-                <a class="btn btn-warning" href="#" role="button">Read more</a>
+              <p class="card-text">An IPA is a hoppy beer within the broader Pale Ale category, and the style usually
+                has a higher ABV than other pale ales. However, not all IPAs are equal, and that’s what can make this
+                category confusing, even for some self-proclaimed beer connoisseurs.</p>
+              <a class="btn btn-warning" href="https://www.beerhawk.co.uk/blog/post/style-feature-ipa" target="_blank"
+                role="button">Read more</a>
             </div>
           </div>
         </div>
 
 
-        <div class="col-3 py-3">
+        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 py-3">
           <div class="card text-bg-secondary bg-gradient" style="width: 18rem;">
             <img src="./resources/images/honey.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Honey</h5>
               <hr>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-                <a class="btn btn-warning" href="#" role="button">Read more</a>
+              <p class="card-text">Honey beer is a type of specialty beer made by brewing an ale or lager with some
+                honey. A honey beer can have varying ABV (alcohol by volume) and IBU (international bitterness units)
+                depending on the type and quantity of honey and the specific brewing process.</p>
+              <a class="btn btn-warning" href="https://homebrewadvice.com/honey-beer" role="button">Read more</a>
             </div>
           </div>
         </div>
 
 
-        <div class="col-3 py-3">
+        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 py-3">
           <div class="card text-bg-secondary bg-gradient" style="width: 18rem;">
             <img src="./resources/images/red ipa.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <hr>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-                <a class="btn btn-warning" href="#" role="button">Read more</a>
+              <h5 class="card-title">Red Ipa</h5>
+              <hr>Hoppy, bitter, and moderately strong like an American IPA, but with some caramel, toffee, and/or dark
+              fruit malt character. Retaining the dryish finish and lean body that makes IPAs so drinkable, a Red IPA is
+              a little more flavorful and malty than an American IPA without being sweet or heavy.</p>
+              <a class="btn btn-warning"
+                href="https://www.bjcp.org/style/2015/21/21B/specialty-ipa-red-ipa/#:~:text=Hoppy%2C%20bitter%2C%20and%20moderately%20strong,without%20being%20sweet%20or%20heavy."
+                target="_blank" role="button">Read more</a>
             </div>
           </div>
         </div>
 
 
-        <div class="col-3 py-3">
+        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 py-3">
           <div class="card text-bg-secondary bg-gradient" style="width: 18rem;">
-            <img src="./resources/images/amber lager.png" class="card-img-top" alt="...">
+            <img src="./resources/images/irish-red.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Irish Red</h5>
               <hr>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-                <a class="btn btn-warning" href="#" role="button">Read more</a>
+              <p class="card-text">Amber to deep reddish copper color (most examples have a deep reddish hue). Clear.
+                Low off-white to tan colored head. An easy-drinking pint. Malt-focused with an initial sweetness and a
+                roasted dryness in the finish. Sometimes brewed as a lager (if so, generally will not exhibit a diacetyl
+                character). When served too cold, the roasted character and bitterness may seem more elevated.</p>
+              <a class="btn btn-warning"
+                href="https://www.bjcp.org/beer-styles/9d-irish-red-ale/#:~:text=Flavor,a%20light%20English%20hop%20flavor."
+                role="button">Read more</a>
             </div>
           </div>
         </div>
 
 
-        <div class="col-3 py-3">
+        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 py-3">
           <div class="card text-bg-secondary bg-gradient" style="width: 18rem;">
             <img src="./resources/images/porter.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Porter</h5>
               <hr>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-                <a class="btn btn-warning" href="#" role="button">Read more</a>
+              <p class="card-text">The nose usually contains mild notes of roasted grains, chocolate, and toffee. There
+                can also be undertones of coffee or licorice. The mouthfeel is thin but not watery. The flavor is always
+                mild with none of the harsh or bitter notes of stout.</p>
+              <a class="btn btn-warning" href="https://www.thespruceeats.com/porter-beer-profile-353347" target="_blank"
+                role="button">Read more</a>
             </div>
           </div>
         </div>
 
 
-        <div class="col-3 py-3">
+        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 py-3">
           <div class="card text-bg-secondary bg-gradient" style="width: 18rem;">
             <img src="./resources/images/stout.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <hr>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-                <a class="btn btn-warning" href="#" role="button">Read more</a>
+              <h5 class="card-title">Stout</h5>
+              <hr>Stouts are somewhat related to porters, they do share similar darkness and some of the same
+              flavor notes as their ancestor, but porters tend to be lighter in color and are made with roast malted
+              barley while stouts are made from black patent malt. As such, stout beers are darker and have a sweet,
+              full-bodied, slightly roasted flavor profile with heavier notes of coffee than porters, which are more
+              reminiscent of chocolate.</p>
+              <a class="btn btn-warning" href="https://www.themanual.com/food-and-drink/what-is-stout-beer/" target="_blank" role="button">Read more</a>
             </div>
           </div>
         </div>
